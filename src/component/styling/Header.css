@@ -1,0 +1,73 @@
+/* Header container */
+header {
+  background-color: #333; /* Dark background for the header */
+  padding: 1rem 0;        /* Padding for top and bottom of the header */
+  position: sticky;       /* Sticky position to keep it at the top */
+  top: 0;                 /* Stick to the top of the page */
+  width: 100%;            /* Full width */
+  z-index: 1000;          /* Ensure the header is on top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;     /* Vertically align the items */
+}
+
+/* Unordered List in Navigation */
+nav ul {
+  list-style: none;        /* Remove bullets from the list */
+  display: flex;           /* Flexbox layout for horizontal list */
+  padding: 0;
+  margin: 0;
+}
+
+/* List Items in Navigation */
+nav ul li {
+  margin: 0 1.5rem;        /* Add spacing between the list items */
+}
+
+/* Links inside Navigation */
+nav ul li a {
+  color: #fff;             /* White text for the links */
+  text-decoration: none;   /* Remove underline */
+  font-size: 1.1rem;       /* Slightly larger font size */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the links */
+nav ul li a:hover {
+  color: #f39c12;          /* Change color on hover (golden accent) */
+}
+
+/* Active link style (if needed) */
+nav ul li a.active {
+  color: #f39c12;          /* Set the color for the active link */
+  font-weight: bold;       /* Make the active link bold */
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--header-text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: var(--text-color);
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+

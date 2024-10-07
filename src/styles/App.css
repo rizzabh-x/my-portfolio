@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .about, .skills, .projects, .contact {
+    padding: 2rem;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* App.css */
+:root {
+    /* Light theme colors */
+    --bg-color: white;
+    --text-color: black;
+    --header-bg-color: #333;
+    --header-text-color: white;
+  }
+  
+  [data-theme="dark"] {
+    /* Dark theme colors */
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --header-bg-color: #1f1f1f;
+    --header-text-color: #ffffff;
+  }
+  
+  /* Use the variables in your styles */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+  }
+  
+  nav ul li a {
+    color: var(--header-text-color);
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  header {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  

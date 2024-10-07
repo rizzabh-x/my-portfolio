@@ -1,0 +1,45 @@
+.skills {
+    padding: 2rem 1rem;
+    background-color: #182848;
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  .skills ul li {
+    font-size: 1.2rem;
+    background: #4b6cb7;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .skills ul li:hover {
+    transform: rotate(10deg);
+    background-color: #567ace;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
